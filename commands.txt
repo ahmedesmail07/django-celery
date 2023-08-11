@@ -9,3 +9,6 @@ Starting Flower
 Starting BEAT 
 
     celery -A core beat -l INFO
+
+Creating Cashe Table
+    python manage.py createcachetable
