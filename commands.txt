@@ -5,3 +5,7 @@ Starting Celery
 Starting Flower 
 
     celery -A core flower --port=5555
+
+Starting BEAT 
+
+    celery -A core beat -l INFO

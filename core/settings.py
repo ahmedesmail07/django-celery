@@ -145,5 +145,9 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = "Africa/Cairo"
 
 CELERY_BEAT_SCHEDULE = {
-    
+    "scheduled_task": {
+        "task": "app2.tasks.add",
+        "schedule": 10.0,
+        "args": (10, 10),
+    }
 }
