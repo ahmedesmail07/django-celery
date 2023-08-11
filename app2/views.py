@@ -10,5 +10,5 @@ class ReviewEmailView(FormView):
 
     def form_valid(self, form):
         form.send_email()
-        msg = "Thanks for usage"
+        msg = "Thanks for Sending Your Review"
         return HttpResponse(msg)

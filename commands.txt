@@ -1,0 +1,7 @@
+Starting Celery
+
+    celery -A core worker -l info --pool=solo
+
+Starting Flower 
+
+    celery -A core flower --port=5555
