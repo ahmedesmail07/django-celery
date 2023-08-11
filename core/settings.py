@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "app1",
     "app2",
     "django_celery_beat",
+    "django_celery_results",
 
 
 ]
@@ -143,6 +144,10 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = "Africa/Cairo"
+
+
+CELERY_RESULT_BACKEND = 'django-db'
+
 
 CELERY_BEAT_SCHEDULE = {
     "scheduled_task": {
